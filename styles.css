@@ -1,0 +1,30 @@
+nav ul li {
+    word-spacing: 1em;
+}
+
+nav {
+    margin: 1em;
+}
+
+#theme-toggle-icon {
+    display: flex;
+    width: 1em;
+    height: 1em;
+}
+
+#theme-toggle-button {
+    display: flexbox;
+    border-radius: 30%;
+}
+
+.main-nav {
+    background-color: whitesmoke;
+    border-radius: 15px 30px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.dark-mode {
+    background-color: red;
+}
+
