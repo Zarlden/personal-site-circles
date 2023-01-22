@@ -1,0 +1,14 @@
+html[data-theme=dark] .main-nav {
+  background-color: grey;
+}
+html[data-theme=dark] nav ul li a {
+  color: azure;
+}
+html[data-theme=dark] button {
+  background-color: grey;
+  border: none;
+  color: white;
+}
+html[data-theme=dark] #theme-toggle-button {
+  background: none;
+}/*# sourceMappingURL=dark.css.map */

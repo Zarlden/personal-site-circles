@@ -1,30 +1,110 @@
-nav ul li {
-    word-spacing: 1em;
+body {
+  padding: 1em;
+}
+
+.main-nav ul li {
+  word-spacing: 1em;
 }
 
 nav {
-    margin: 1em;
+  margin: 1em;
 }
 
 #theme-toggle-icon {
-    display: flex;
-    width: 1em;
-    height: 1em;
+  display: flex;
+  width: 1em;
+  height: 1em;
 }
 
 #theme-toggle-button {
-    display: flexbox;
-    border-radius: 30%;
+  display: flexbox;
+  border-radius: 30%;
+}
+
+h2 {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .main-nav {
-    background-color: whitesmoke;
-    border-radius: 15px 30px;
-    padding-left: 1em;
-    padding-right: 1em;
+  background-color: whitesmoke;
+  border-radius: 15px 30px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.main-nav button {
+  background-color: whitesmoke;
+  border: none;
+  color: #1a99c3;
 }
 
-.dark-mode {
-    background-color: red;
+@-webkit-keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+article {
+  -webkit-animation: 1s fadeLeft;
+          animation: 1s fadeLeft;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.menu .circle-nav li {
+  position: absolute;
+  margin: auto;
+}
+.menu .circle-nav #home-nav {
+  bottom: 120px;
+  left: 24px;
+}
+.menu .circle-nav #theme-nav {
+  right: 120px;
+}
+.menu .circle-nav #blog-nav {
+  left: 120px;
+}
+.menu .circle-nav #portfolio-nav {
+  top: 120px;
+  left: 15px;
+}
+.menu .circle-nav #close-radial {
+  position: relative;
+  left: 16px;
+  background: none;
+  border: none;
+  color: #1095c1;
+  outline: none;
+}
+.menu button:focus {
+  outline: none;
+}
+
+.buttonToLink {
+  background: none;
+  border: none;
+  outline: none;
+  color: #1095c1;
+}/*# sourceMappingURL=styles.css.map */

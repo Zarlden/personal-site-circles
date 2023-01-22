@@ -1,0 +1,110 @@
+$menu-size: 120px;
+
+body {
+  padding: 1em;
+}
+
+.main-nav ul li {
+  word-spacing: 1em;
+}
+
+nav {
+  margin: 1em;
+}
+
+#theme-toggle-icon {
+  display: flex;
+  width: 1em;
+  height: 1em;
+}
+
+#theme-toggle-button {
+  display: flexbox;
+  border-radius: 30%;
+}
+
+h2 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.main-nav {
+  background-color: whitesmoke;
+  border-radius: 15px 30px;
+  padding-left: 1em;
+  padding-right: 1em;
+  button {
+    background-color: whitesmoke;
+    border: none;
+    color: #1a99c3;
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+article {
+  animation: 1s fadeLeft;
+}
+
+
+
+.menu {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  width: $menu-size;
+  height: $menu-size;
+  border-radius: 50%;
+  .circle-nav {
+    li {
+      position: absolute;
+      margin: auto;
+    }
+    #home-nav {
+      bottom: $menu-size;
+      left: 24px;
+    }
+    #theme-nav {
+      right: $menu-size;
+    }
+    #blog-nav {
+      left: $menu-size;
+    }
+    #portfolio-nav {
+      top: $menu-size;
+      left: 15px;
+    }
+    #close-radial {
+      position: relative;
+      left: 16px;
+      background: none;
+      border: none;
+      color:#1095c1;
+      outline: none;
+    }
+  }
+  button:focus {
+    outline: none;
+  }
+  // #blog-nav {
+  //   position: relative;
+  //   top:-80px;
+  // }
+}
+
+.buttonToLink{
+  background: none;
+  border: none;
+  outline: none;
+  color: #1095c1;
+}

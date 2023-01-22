@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,24 +8,27 @@
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="dark.css">
+    <script type="module" src="index.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav id="fake-nav">
             <ul>
                 <li><strong>Home</strong></li>
             </ul>
             <ul class="main-nav">
                 <li>
-                    <a href="/blog">Blog</a>
-                    <a href="/portfolio">Portfolio</a>
+                    <button class="nav-usage">Blog</button>
+                </li>
+                <li>
+                    <button class="nav-usage">About me</button>
                 </li>
             </ul>
             <ul>
-                <li><button class="btn" id="theme-toggle-button">
+                <li><button class="btn nav-usage">
                         <svg id="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                             <path
@@ -35,11 +38,38 @@
         </nav>
         <hr>
     </header>
+    
+            <!-- Menu wheel test -->
+            <div class="menu">
+                <nav>
+                    <ul class="circle-nav">
+                        <li id="blog-nav">
+                            <a href="/blog.html">Blog</a>
+                        </li>
+                        <li id="portfolio-nav" >
+                            <a href="/portfolio">About me</a>
+                        </li>
+                        <li id="home-nav" >
+                            <a href="/">Home</a>
+                        </li>
+                        <li id="theme-nav" >
+                            <button class="buttonToLink" id="theme-toggle-button">Theme</button>
+                        </li>
+                        <li id="close">
+                            <button id="close-radial">X</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
     <main>
-        <article>
-            <h1>I'm Damon</h1>
-            <p>A software developer</p>
-        </article>
+        <h1>Hi</h1>
+        <p>I'm Damon and well this is my profile page</p>
+        <p>Hopefully everything works and nothing is broken :/</p>
+        <!-- <article>
+            <h1>Me</h1>
+            <p>~~~</p>
+        </article> -->
+
     </main>
     <footer>
 

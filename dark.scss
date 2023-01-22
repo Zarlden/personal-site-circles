@@ -1,0 +1,18 @@
+html[data-theme="dark"] {
+    .main-nav {
+        background-color: grey;
+    }
+    nav ul li a {
+        color: azure;
+    }
+    
+    button {
+        background-color: grey;
+        border: none;
+        color: white;
+    }
+
+    #theme-toggle-button {
+        background: none;
+    }
+}
