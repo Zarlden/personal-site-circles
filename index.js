@@ -42,13 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleNav.style.display = 'none'
     }
 
-    let greeting = document.querySelector('h1');
+    let greeting = document.querySelector('#greeting');
 
     setInterval(() => {
         index++
         index %= 3
         changeText(greeting, greetingList[index])
-    }, 2500)
+    }, 2000)
 })
 
 
